@@ -102,7 +102,7 @@
         .hero p {
             color: var(--text-muted);
             font-size: 1.2rem;
-            max-width: 600px;
+            max-width: 650px;
             margin-bottom: 30px;
         }
 
@@ -117,6 +117,7 @@
             transition: 0.3s;
             text-decoration: none;
             box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+            display: inline-block;
         }
 
         .btn:hover {
@@ -200,12 +201,60 @@
             font-size: 0.9rem;
         }
 
+        /* --- CONTATO SECTION --- */
+        .contact {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to top, rgba(247, 0, 106, 0.05), transparent);
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-whatsapp {
+            border-color: #25D366;
+            color: #25D366;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-whatsapp:hover {
+            background: #25D366;
+            color: var(--bg-dark);
+            box-shadow: 0 0 25px #25D366;
+        }
+
+        .btn-email {
+            border-color: var(--neon-pink);
+            color: var(--neon-pink);
+            box-shadow: 0 0 15px rgba(247, 0, 106, 0.2);
+        }
+
+        .btn-email:hover {
+            background: var(--neon-pink);
+            color: var(--bg-dark);
+            box-shadow: 0 0 25px var(--neon-pink);
+        }
+
         /* --- FOOTER --- */
         footer {
             text-align: center;
             padding: 40px;
             border-top: 1px solid rgba(255,255,255,0.05);
-            margin-top: 50px;
         }
 
         footer p {
@@ -238,9 +287,8 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Logos</a></li>
-                <li><a href="#portfolio">Edição de Imagem</a></li>
-                <li><a href="#portfolio">Projetos IA</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -248,7 +296,7 @@
     <section class="hero" id="home">
         <img src="https://via.placeholder.com/180x180/151720/ffffff?text=Sua+Foto" alt="Eduardo">
         <h1>Eduardo | Portfólio de Design</h1>
-        <p>Criando onde a criatividade humana e a Inteligência Artificial convergem. Especialista em logotipos, edição de imagem e artes digitais.</p>
+        <p>Criando onde a criatividade humana e a Inteligência Artificial convergem. Especialista em logotipos, edição de imagem, projetos de social media e artes digitais.</p>
         <a href="#portfolio" class="btn">Explorar Projetos</a>
     </section>
 
@@ -263,36 +311,50 @@
 
         <div class="grid">
             <div class="card item logos">
-                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop" alt="Logo Design">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600&auto=format&fit=crop" alt="Jeová Jireh">
                 <div class="card-info">
                     <h3>Identidade Visual</h3>
-                    <p>Criação de logotipo focado em impacto e clareza para marcas modernas.</p>
+                    <p>Criação de logotipo para a Jeová Jireh (lanchonete e pizzaria), empresas de games e serviços de limpeza.</p>
                 </div>
             </div>
 
-            <div class="card item edicao">
-                <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=600&auto=format&fit=crop" alt="Edição de Imagem">
+            <div class="card item gerais edicao">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" alt="Kries Design">
                 <div class="card-info">
-                    <h3>Manipulação e Edição</h3>
-                    <p>Correção de cores, recortes profissionais e ambientação cinematográfica.</p>
+                    <h3>Social Media & Vídeos</h3>
+                    <p>Criação de reels, menus e materiais institucionais desenvolvidos na Kries Design.</p>
                 </div>
             </div>
 
             <div class="card item gerais">
-                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop" alt="Projetos Gerais">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=600&auto=format&fit=crop" alt="Camisas e Distribuidora">
                 <div class="card-info">
-                    <h3>Social Media & Menus</h3>
-                    <p>Design estratégico para postagens, reels e materiais institucionais.</p>
+                    <h3>Design de Estampas</h3>
+                    <p>Criação de logotipo e design exclusivo de camisas para distribuidora.</p>
                 </div>
             </div>
 
             <div class="card item ia">
-                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" alt="Projeto IA">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" alt="Florescer da Mente">
                 <div class="card-info">
-                    <h3>Geração com IA</h3>
-                    <p>Criação de assets, concepts e ilustrações avançadas unindo design e inteligência artificial.</p>
+                    <h3>Florescer da Mente</h3>
+                    <p>Arte digital gerada e editada, disponível para produtos nas lojas virtuais.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <h2>Vamos trabalhar juntos?</h2>
+        <p>Precisa de uma nova identidade visual, artes para sua empresa ou projetos com IA? Entre em contato ou acesse minhas lojas virtuais!</p>
+        <div class="contact-buttons">
+            <a href="https://wa.me/5592000000000" target="_blank" class="btn btn-whatsapp">Falar no WhatsApp</a>
+            
+            <a href="mailto:seuemail@exemplo.com" class="btn btn-email">Enviar E-mail</a>
+
+            <a href="https://www.colab55.com/" target="_blank" class="btn">Loja Colab55</a>
+            <a href="https://www.threadless.com/" target="_blank" class="btn">Loja Threadless</a>
+            <a href="https://www.lovart.com/" target="_blank" class="btn">Perfil no Lovart</a>
         </div>
     </section>
 
